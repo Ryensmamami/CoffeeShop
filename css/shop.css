@@ -1,0 +1,261 @@
+
+body{
+    background-color: #707070;
+}
+
+.newsletters {
+    position: relative
+}
+
+.continfobox {
+    position: relative
+}
+
+.infobox {
+    background-color: #fff;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+    min-height: 330px;
+    box-sizing: border-box;
+    color: #707070;
+    height: 100%
+}
+
+.infobox figure {
+    padding: 0;
+    display: inline-block;
+    float: none;
+    width: 100px
+}
+
+.infobox figure.img-circle img {
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    max-width: 100%
+}
+
+.infobox .flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    -ms-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d
+}
+
+.infobox .flip-container .flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative
+}
+
+.infobox .flip-container .flipper .front,
+.infobox .flip-container .flipper .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(0deg);
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    -o-transform: rotateY(0deg);
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+    -ms-transform: rotateY(0deg);
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.infobox .flip-container .flipper .front {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    z-index: 2
+}
+
+.infobox .flip-container .flipper .back {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg)
+}
+
+.infobox .flip-container.flipped .flipper .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+.infobox .flip-container.flipped .flipper .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg)
+}
+
+.infobox .info {
+    position: static;
+    padding: 0
+}
+
+.infobox div.tags {
+    background-color: #ffeee5;
+    border-radius: 6px;
+    font-size: 10px;
+    max-width: 58px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: auto;
+    color: #ff5c03;
+    padding: 5px 8px;
+    min-height: 19px
+}
+
+.infobox h2,
+.infobox h3 {
+    font-size: 20px;
+    line-height: 21px;
+    color: #000000
+}
+
+.infobox h2 a,
+.infobox h3 a {
+    color: #000000
+}
+
+.infobox p {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0 auto
+}
+
+.infobox.vote {
+    min-height: 330px
+}
+
+.infobox.vote p {
+    min-height: 60px
+}
+
+.infobox.vote .btn-green {
+    margin-top: 38px
+}
+
+.infobox.vote .front .info {
+    padding-left: 10px
+}
+
+.infobox.vote .back .info {
+    padding-left: 10px
+}
+
+.infobox.vote .back figcaption {
+    margin-top: 10px
+}
+
+.infobox.vote .back .sharevia {
+    margin-top: 32px
+}
+
+.infobox.vote .back .sharevia a.tw .fa {
+    margin-left: 0
+}
+
+.infobox.vote .back .contprogress {
+    margin-top: 33px
+}
+
+.infobox.vote figure {
+    width: 25%;
+    float: left
+}
+
+.infobox.voted figure img {
+    border-radius: 6px
+}
+
+.infobox.voted figure figcaption {
+    margin-top: 5px
+}
+
+.infobox.voted p {
+    font-size: 12px
+}
+
+.infobox .btn-susbcr {
+    margin-top: 27px
+}
+
+.infobox .btnvote {
+    margin-top: 34px
+}
+
+.infobox .contprogress {
+    padding: 0;
+    margin-top: 30px
+}
+
+.infobox .progress {
+    padding: 0;
+    height: 10px;
+    background: #ece0dd
+}
+
+.infobox .progress .progress-bar {
+    background: #ff5c03
+}
+
+.infobox .nrosprogress div {
+    font-size: 10px;
+    color: #000000
+}
+
+.infobox .nrosprogress div:first-child {
+    font-size: 16px;
+    margin-bottom: 5px
+}
+
+.infobox .btngetintouch {
+    margin-top: 49px
+}
+
+.infobox.suscribed figure img {
+    border-radius: 6px
+}
+
+.infobox.suscribed h3 {
+    margin-top: 30px
+}
+
+.infobox aside.tags {
+    top: 0;
+    right: 0
+}
